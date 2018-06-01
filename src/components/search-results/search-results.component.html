@@ -1,0 +1,10 @@
+<ion-item *ngIf="userDetails" text-wrap>
+  <ion-avatar item-left>
+    <img [src]="userDetails.avatar_url" alt="userDetails.name">
+  </ion-avatar>
+  <h2>{{userDetails.name}}</h2>
+  <h3>{{userDetails.company}}</h3>
+  <p>{{userDetails.location}}</p>
+  <p text-wrap>{{userDetails.bio}}</p>
+
+</ion-item>
